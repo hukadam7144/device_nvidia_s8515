@@ -1,2 +1,2 @@
-add_lunch_combo cm_s8515-userdebug
+add_lunch_combo omni_s8515-userdebugC
 
