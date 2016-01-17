@@ -54,7 +54,7 @@ TARGET_EXTRA_CFLAGS += $(call cc-option,  -marm -march=armv7-a)
 # Audio
 # BOARD_USES_GENERIC_AUDIO := false
 # BOARD_USES_ALSA_AUDIO := true
-
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.qcom
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/nvidia/s8515
 TARGET_KERNEL_CONFIG := tegra_s8515_cyanogenmod_defconfig
