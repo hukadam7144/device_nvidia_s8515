@@ -6,7 +6,6 @@ rild.libpath=/system/lib/libril-icera.so
 persist.tegra.nvmmlite = 1
 persist.wlan.ti.calibrated = 0
 ro.ril.wake_lock_timeout=200000
-ro.sf.override_null_lcd_density = 1
 persist.tegra.panel.rotation = 0
 ro.callvibrate.enable=true
 
@@ -29,8 +28,6 @@ af.resampler.quality = 4
 #disable Miracast game mode support
 nvwfd.gamemode = 0
 
-#max resolution supported for Miracast is 720p, represented interms of macroblocks
-nvwfd.maxresolution_macroblocks = 3600
 
 #disable log services by default
 persist.sys.nvlog.enable = 0
