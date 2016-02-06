@@ -40,7 +40,7 @@ ifeq ($(TARGET_TEGRA_VERSION),ap20)
 else
     ifeq ($(TARGET_TEGRA_VERSION),t30)
         ifeq ($(NV_MOBILE_DGPU),1)
-            TARGET_KERNEL_CONFIG ?= tegra3_android_dgpu_defconfig
+            TARGET_KERNEL_CONFIG ?= tegra3_android_defconfig
         else
             TARGET_KERNEL_CONFIG ?= tegra3_android_defconfig
         endif
