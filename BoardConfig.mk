@@ -44,7 +44,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
 TARGET_KERNEL_SOURCE := kernel/nvidia/s8515
-TARGET_KERNEL_CONFIG := tegra_s8515_cyanogenmod_defconfig
+TARGET_KERNEL_CONFIG := tegra_s8515_cpasjuste_defconfig
 
 SET_DCP_CURRENT_LIMIT_2A := true
 USE_E2FSPROGS := true
