@@ -124,7 +124,8 @@ TARGET_RECOVERY_FSTAB := device/nvidia/s8515/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # TWRP RECOVERY
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
+#TW_BOARD_CUSTOM_GRAPHICS support has been deprecated in TWRP
+#TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
 DEVICE_RESOLUTION := 720x1280
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_USE_SKIA_LCDTEXT := true
