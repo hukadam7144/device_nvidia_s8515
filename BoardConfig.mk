@@ -112,29 +112,16 @@ WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path
 WIFI_DRIVER_MODULE_ARG           := "iface_name=wlan0"
 WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 
-# CWM RECOVERY
-BOARD_HAS_NO_SELECT_BUTTON := true
-#BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/devices/platform/pwm-backlight/backlight/pwm-backlight/brightness\"
-BOARD_UMS_LUNFILE := "/sys/devices/platform/tegra-udc.0/gadget/lun0/file"
-#COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-#BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/s8515/recovery/recovery_keys.c
-TARGET_RECOVERY_FSTAB := device/nvidia/s8515/recovery.fstab
-#BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/ss8515/recovery/cwm-graphics.c
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+
 
 # TWRP RECOVERY
-#TW_BOARD_CUSTOM_GRAPHICS support has been deprecated in TWRP
-#TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
-DEVICE_RESOLUTION := 720x1280
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-BOARD_USE_SKIA_LCDTEXT := true
+TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
 RECOVERY_SDCARD_ON_DATA := true
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
-TW_EXTERNAL_STORAGE_PATH := "/external_sd"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_THEME := portrait_hdpi
+BOARD_HAS_NO_REAL_SDCARD := true
+BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/tegra-udc.0/gadget/lun0/file
 TW_BRIGHTNESS_PATH := /sys/devices/platform/pwm-backlight/backlight/pwm-backlight/brightness
 TW_MAX_BRIGHTESS := 255
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/tegra-udc.0/gadget/lun0/file
+
 
