@@ -115,7 +115,7 @@ WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 
 
 # TWRP RECOVERY
-TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
+#TW_BOARD_CUSTOM_GRAPHICS := ../../../device/nvidia/s8515/recovery/graphics.c
 RECOVERY_SDCARD_ON_DATA := true
 TW_THEME := portrait_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
