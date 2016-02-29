@@ -43,9 +43,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.hdcp.rc:root/init.hdcp.rc \
 	$(LOCAL_PATH)/root/init_charging.rc:root/init_charging.rc \
 	$(LOCAL_PATH)/root/swapsd.sh:root/swapsd.sh
-# TWRP
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+
 
 # Enable repeatable keys in CWM
 PRODUCT_PROPERTY_OVERRIDES += \
